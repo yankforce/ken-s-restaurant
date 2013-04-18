@@ -24,6 +24,7 @@
 		49E5118017203461006BD981 /* fork-and-knife.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E5117F17203461006BD981 /* fork-and-knife.png */; };
 		49E511821720347A006BD981 /* tags.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E511811720347A006BD981 /* tags.png */; };
 		49E51184172034C6006BD981 /* location-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E51183172034C6006BD981 /* location-arrow.png */; };
+		49E5118817209C59006BD981 /* MenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E5118717209C59006BD981 /* MenuItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		49E5117F17203461006BD981 /* fork-and-knife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fork-and-knife.png"; sourceTree = "<group>"; };
 		49E511811720347A006BD981 /* tags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tags.png; sourceTree = "<group>"; };
 		49E51183172034C6006BD981 /* location-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location-arrow.png"; sourceTree = "<group>"; };
+		49E5118617209C59006BD981 /* MenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemCell.h; sourceTree = "<group>"; };
+		49E5118717209C59006BD981 /* MenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 			children = (
 				49E51174172021B6006BD981 /* MenuViewController.h */,
 				49E51175172021B6006BD981 /* MenuViewController.m */,
+				49E5118617209C59006BD981 /* MenuItemCell.h */,
+				49E5118717209C59006BD981 /* MenuItemCell.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 				49E5116217201FFA006BD981 /* main.m in Sources */,
 				49E5116617201FFA006BD981 /* AppDelegate.m in Sources */,
 				49E51176172021B6006BD981 /* MenuViewController.m in Sources */,
+				49E5118817209C59006BD981 /* MenuItemCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

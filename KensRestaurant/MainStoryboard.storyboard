@@ -30,12 +30,13 @@
             </objects>
             <point key="canvasLocation" x="519" y="-522"/>
         </scene>
-        <!--Navigation Controller - Book a Table-->
+        <!--Navigation Controller - Ken's Restaurant-->
         <scene sceneID="FlN-tb-5EH">
             <objects>
-                <navigationController definesPresentationContext="YES" id="Pe3-io-8CG" sceneMemberID="viewController">
+                <navigationController title="Ken's Restaurant" definesPresentationContext="YES" id="Pe3-io-8CG" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Book a Table" image="calendar.png" id="JlT-lQ-jJo"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JdR-sy-oRE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="JdR-sy-oRE">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -98,16 +99,48 @@
             </objects>
             <point key="canvasLocation" x="519" y="814"/>
         </scene>
-        <!--Table View Controller - Root View Controller-->
+        <!--Menu View Controller - Root View Controller-->
         <scene sceneID="JId-De-088">
             <objects>
-                <tableViewController id="qDf-ZW-6Uq" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2Wp-pF-AC9">
+                <tableViewController id="qDf-ZW-6Uq" customClass="MenuViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="2Wp-pF-AC9">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="QcE-G5-pFn">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="70" id="QcE-G5-pFn">
+                                <rect key="frame" x="0.0" y="22" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="Y9A-hz-U0o" kind="push" identifier="subMenu" id="raQ-td-rQb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="q0l-aF-VDG"/>
+                    <connections>
+                        <outlet property="tableView" destination="2Wp-pF-AC9" id="uQv-Yt-dA4"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWB-fg-3hY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="-1186"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="x2e-Y2-qiz">
+            <objects>
+                <tableViewController id="Y9A-hz-U0o" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jMZ-Tm-07y">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7WR-GO-E7Q">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -117,21 +150,30 @@
                                 </view>
                             </tableViewCell>
                         </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Y9A-hz-U0o" id="6fC-dp-T6v"/>
+                            <outlet property="delegate" destination="Y9A-hz-U0o" id="iWc-WX-oDv"/>
+                        </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="q0l-aF-VDG"/>
+                    <navigationItem key="navigationItem" id="0aF-nD-mfv"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OWB-fg-3hY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfx-gv-zya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="519" y="-1186"/>
+            <point key="canvasLocation" x="909" y="-1186"/>
         </scene>
-        <!--Navigation Controller - Menu-->
+        <!--Navigation Controller - Ken's Restaurant-->
         <scene sceneID="D1x-PE-OPj">
             <objects>
-                <navigationController definesPresentationContext="YES" id="ACO-Bl-PMb" sceneMemberID="viewController">
+                <navigationController title="Ken's Restaurant" definesPresentationContext="YES" id="ACO-Bl-PMb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Menu" image="fork-and-knife.png" id="AzQ-cY-EwY"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wda-ev-uWQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="Wda-ev-uWQ">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bl4-Lw-U8j">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="qDf-ZW-6Uq" kind="relationship" relationship="rootViewController" id="x7D-PU-ycY"/>
                     </connections>
@@ -140,14 +182,19 @@
             </objects>
             <point key="canvasLocation" x="-15" y="-1186"/>
         </scene>
-        <!--Navigation Controller - Reach Out-->
+        <!--Navigation Controller - Ken's Restaurant-->
         <scene sceneID="Ck4-zX-cv3">
             <objects>
-                <navigationController definesPresentationContext="YES" id="zUT-2h-57R" sceneMemberID="viewController">
+                <navigationController title="Ken's Restaurant" definesPresentationContext="YES" id="zUT-2h-57R" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Reach Out" image="location-arrow.png" id="dX0-yj-CZ4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cRZ-Y6-Gqx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="cRZ-Y6-Gqx">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8k7-KE-Ygt">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="6nW-wD-KmR" kind="relationship" relationship="rootViewController" id="ieR-Qn-9xH"/>
                     </connections>
@@ -156,12 +203,13 @@
             </objects>
             <point key="canvasLocation" x="-15" y="814"/>
         </scene>
-        <!--Navigation Controller - Offers-->
+        <!--Navigation Controller - Ken's Restaurant-->
         <scene sceneID="7T5-tb-EFt">
             <objects>
-                <navigationController definesPresentationContext="YES" id="jeO-7k-Azs" sceneMemberID="viewController">
+                <navigationController title="Ken's Restaurant" definesPresentationContext="YES" id="jeO-7k-Azs" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Offers" image="tags.png" id="4ne-7a-X0H"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zJL-Xn-CrP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="zJL-Xn-CrP">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -172,10 +220,10 @@
             </objects>
             <point key="canvasLocation" x="-15" y="130"/>
         </scene>
-        <!--Tab Bar Controller - Ken's Restaurant-->
+        <!--Tab Bar Controller - Kens Restaurant-->
         <scene sceneID="Eya-Ky-0aa">
             <objects>
-                <tabBarController title="Ken's Restaurant" definesPresentationContext="YES" id="s5L-ut-I3F" sceneMemberID="viewController">
+                <tabBarController title="Kens Restaurant" definesPresentationContext="YES" id="s5L-ut-I3F" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="GvI-f4-q1U">
@@ -201,6 +249,14 @@
         <image name="location-arrow.png" width="24" height="24"/>
         <image name="tags.png" width="24" height="25"/>
     </resources>
+    <classes>
+        <class className="MenuViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
