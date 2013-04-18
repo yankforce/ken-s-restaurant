@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 restaurant. All rights reserved.
 //
 
-#import "MenuViewController.h"
+#import "MenuViewController.h"  
 
 @interface MenuViewController ()
 
@@ -19,6 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
     }
     return self;
 }

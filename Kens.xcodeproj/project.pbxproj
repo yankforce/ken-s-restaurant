@@ -16,22 +16,39 @@
 		49E5116817201FFA006BD981 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E5116717201FFA006BD981 /* Default.png */; };
 		49E5116A17201FFA006BD981 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E5116917201FFA006BD981 /* Default@2x.png */; };
 		49E5116C17201FFA006BD981 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E5116B17201FFA006BD981 /* Default-568h@2x.png */; };
+		49E511731720200C006BD981 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E511721720200C006BD981 /* MainStoryboard.storyboard */; };
+		49E51176172021B6006BD981 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E51175172021B6006BD981 /* MenuViewController.m */; };
+		49E5117917202679006BD981 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E5117817202679006BD981 /* icon.png */; };
+		49E5117B172026D7006BD981 /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E5117A172026D7006BD981 /* icon114.png */; };
+		49E5117E17203451006BD981 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E5117D17203451006BD981 /* calendar.png */; };
+		49E5118017203461006BD981 /* fork-and-knife.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E5117F17203461006BD981 /* fork-and-knife.png */; };
+		49E511821720347A006BD981 /* tags.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E511811720347A006BD981 /* tags.png */; };
+		49E51184172034C6006BD981 /* location-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E51183172034C6006BD981 /* location-arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		49E5115217201FFA006BD981 /* KensRestaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KensRestaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E5115217201FFA006BD981 /* Kens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E5115517201FFA006BD981 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		49E5115717201FFA006BD981 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49E5115917201FFA006BD981 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		49E5115D17201FFA006BD981 /* KensRestaurant-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KensRestaurant-Info.plist"; sourceTree = "<group>"; };
+		49E5115D17201FFA006BD981 /* Kens-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kens-Info.plist"; sourceTree = "<group>"; };
 		49E5115F17201FFA006BD981 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49E5116117201FFA006BD981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		49E5116317201FFA006BD981 /* KensRestaurant-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KensRestaurant-Prefix.pch"; sourceTree = "<group>"; };
+		49E5116317201FFA006BD981 /* Kens-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kens-Prefix.pch"; sourceTree = "<group>"; };
 		49E5116417201FFA006BD981 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49E5116517201FFA006BD981 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		49E5116717201FFA006BD981 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		49E5116917201FFA006BD981 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		49E5116B17201FFA006BD981 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		49E511721720200C006BD981 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		49E51174172021B6006BD981 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ../MenuViewController.h; sourceTree = "<group>"; };
+		49E51175172021B6006BD981 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ../MenuViewController.m; sourceTree = "<group>"; };
+		49E5117817202679006BD981 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		49E5117A172026D7006BD981 /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon114.png; path = ../icon114.png; sourceTree = "<group>"; };
+		49E5117D17203451006BD981 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		49E5117F17203461006BD981 /* fork-and-knife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fork-and-knife.png"; sourceTree = "<group>"; };
+		49E511811720347A006BD981 /* tags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tags.png; sourceTree = "<group>"; };
+		49E51183172034C6006BD981 /* location-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location-arrow.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +68,7 @@
 		49E5114917201FFA006BD981 = {
 			isa = PBXGroup;
 			children = (
-				49E5115B17201FFA006BD981 /* KensRestaurant */,
+				49E5115B17201FFA006BD981 /* Kens */,
 				49E5115417201FFA006BD981 /* Frameworks */,
 				49E5115317201FFA006BD981 /* Products */,
 			);
@@ -60,7 +77,7 @@
 		49E5115317201FFA006BD981 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49E5115217201FFA006BD981 /* KensRestaurant.app */,
+				49E5115217201FFA006BD981 /* Kens.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,23 +92,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		49E5115B17201FFA006BD981 /* KensRestaurant */ = {
+		49E5115B17201FFA006BD981 /* Kens */ = {
 			isa = PBXGroup;
 			children = (
+				49E5117C172033EF006BD981 /* images */,
+				49E51177172021D0006BD981 /* Menu */,
 				49E5116417201FFA006BD981 /* AppDelegate.h */,
 				49E5116517201FFA006BD981 /* AppDelegate.m */,
+				49E511721720200C006BD981 /* MainStoryboard.storyboard */,
 				49E5115C17201FFA006BD981 /* Supporting Files */,
 			);
+			name = Kens;
 			path = KensRestaurant;
 			sourceTree = "<group>";
 		};
 		49E5115C17201FFA006BD981 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				49E5115D17201FFA006BD981 /* KensRestaurant-Info.plist */,
+				49E5115D17201FFA006BD981 /* Kens-Info.plist */,
 				49E5115E17201FFA006BD981 /* InfoPlist.strings */,
 				49E5116117201FFA006BD981 /* main.m */,
-				49E5116317201FFA006BD981 /* KensRestaurant-Prefix.pch */,
+				49E5116317201FFA006BD981 /* Kens-Prefix.pch */,
 				49E5116717201FFA006BD981 /* Default.png */,
 				49E5116917201FFA006BD981 /* Default@2x.png */,
 				49E5116B17201FFA006BD981 /* Default-568h@2x.png */,
@@ -99,12 +120,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		49E51177172021D0006BD981 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				49E51174172021B6006BD981 /* MenuViewController.h */,
+				49E51175172021B6006BD981 /* MenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		49E5117C172033EF006BD981 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				49E5118517203656006BD981 /* icons */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		49E5118517203656006BD981 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				49E5117A172026D7006BD981 /* icon114.png */,
+				49E5117817202679006BD981 /* icon.png */,
+				49E51183172034C6006BD981 /* location-arrow.png */,
+				49E511811720347A006BD981 /* tags.png */,
+				49E5117F17203461006BD981 /* fork-and-knife.png */,
+				49E5117D17203451006BD981 /* calendar.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49E5115117201FFA006BD981 /* KensRestaurant */ = {
+		49E5115117201FFA006BD981 /* Kens */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49E5116F17201FFA006BD981 /* Build configuration list for PBXNativeTarget "KensRestaurant" */;
+			buildConfigurationList = 49E5116F17201FFA006BD981 /* Build configuration list for PBXNativeTarget "Kens" */;
 			buildPhases = (
 				49E5114E17201FFA006BD981 /* Sources */,
 				49E5114F17201FFA006BD981 /* Frameworks */,
@@ -114,9 +165,9 @@
 			);
 			dependencies = (
 			);
-			name = KensRestaurant;
+			name = Kens;
 			productName = KensRestaurant;
-			productReference = 49E5115217201FFA006BD981 /* KensRestaurant.app */;
+			productReference = 49E5115217201FFA006BD981 /* Kens.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +179,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = restaurant;
 			};
-			buildConfigurationList = 49E5114D17201FFA006BD981 /* Build configuration list for PBXProject "KensRestaurant" */;
+			buildConfigurationList = 49E5114D17201FFA006BD981 /* Build configuration list for PBXProject "Kens" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -140,7 +191,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49E5115117201FFA006BD981 /* KensRestaurant */,
+				49E5115117201FFA006BD981 /* Kens */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +205,13 @@
 				49E5116817201FFA006BD981 /* Default.png in Resources */,
 				49E5116A17201FFA006BD981 /* Default@2x.png in Resources */,
 				49E5116C17201FFA006BD981 /* Default-568h@2x.png in Resources */,
+				49E511731720200C006BD981 /* MainStoryboard.storyboard in Resources */,
+				49E5117917202679006BD981 /* icon.png in Resources */,
+				49E5117B172026D7006BD981 /* icon114.png in Resources */,
+				49E5117E17203451006BD981 /* calendar.png in Resources */,
+				49E5118017203461006BD981 /* fork-and-knife.png in Resources */,
+				49E511821720347A006BD981 /* tags.png in Resources */,
+				49E51184172034C6006BD981 /* location-arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +224,7 @@
 			files = (
 				49E5116217201FFA006BD981 /* main.m in Sources */,
 				49E5116617201FFA006BD981 /* AppDelegate.m in Sources */,
+				49E51176172021B6006BD981 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +304,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KensRestaurant/KensRestaurant-Prefix.pch";
-				INFOPLIST_FILE = "KensRestaurant/KensRestaurant-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "KensRestaurant/Kens-Prefix.pch";
+				INFOPLIST_FILE = "KensRestaurant/Kens-Info.plist";
+				PRODUCT_NAME = Kens;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -256,9 +316,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KensRestaurant/KensRestaurant-Prefix.pch";
-				INFOPLIST_FILE = "KensRestaurant/KensRestaurant-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "KensRestaurant/Kens-Prefix.pch";
+				INFOPLIST_FILE = "KensRestaurant/Kens-Info.plist";
+				PRODUCT_NAME = Kens;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -266,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49E5114D17201FFA006BD981 /* Build configuration list for PBXProject "KensRestaurant" */ = {
+		49E5114D17201FFA006BD981 /* Build configuration list for PBXProject "Kens" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49E5116D17201FFA006BD981 /* Debug */,
@@ -275,7 +336,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49E5116F17201FFA006BD981 /* Build configuration list for PBXNativeTarget "KensRestaurant" */ = {
+		49E5116F17201FFA006BD981 /* Build configuration list for PBXNativeTarget "Kens" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49E5117017201FFA006BD981 /* Debug */,

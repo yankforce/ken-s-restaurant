@@ -12,10 +12,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    UIView *bgView = [[UIView alloc] initWithFrame:[[self window] frame]];
+    [bgView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"wood-bg.png"]]];
+    [[self window] addSubview:bgView];
+    
     return YES;
 }
 
