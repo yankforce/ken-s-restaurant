@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		49B96B791721088C00A70F74 /* SubMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B96B781721088C00A70F74 /* SubMenuViewController.m */; };
 		49B96B7B172118AA00A70F74 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B96B7A172118AA00A70F74 /* logo.png */; };
-		49B96B7F17211B0600A70F74 /* ReachOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B96B7E17211B0600A70F74 /* ReachOutViewController.m */; };
 		49E5115617201FFA006BD981 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E5115517201FFA006BD981 /* UIKit.framework */; };
 		49E5115817201FFA006BD981 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E5115717201FFA006BD981 /* Foundation.framework */; };
 		49E5115A17201FFA006BD981 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E5115917201FFA006BD981 /* CoreGraphics.framework */; };
@@ -33,16 +32,19 @@
 		49E5118F1720EBFA006BD981 /* large-dishes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49E5118C1720EBFA006BD981 /* large-dishes.jpg */; };
 		49E511961720ECD5006BD981 /* SubMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E511951720ECD5006BD981 /* SubMenuItemCell.m */; };
 		49E5119F1720F57C006BD981 /* CommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E5119E1720F57B006BD981 /* CommonFunctions.m */; };
+		9AAC44711721998E00B32DD5 /* ReachUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC44701721998E00B32DD5 /* ReachUsViewController.m */; };
+		9AAC447317219B2C00B32DD5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAC447217219B2C00B32DD5 /* MapKit.framework */; };
+		9AAC44771721A23200B32DD5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAC44761721A23200B32DD5 /* CoreLocation.framework */; };
+		9AAC44791721A24500B32DD5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAC44781721A24500B32DD5 /* MobileCoreServices.framework */; };
+		9AAC447B1721A25F00B32DD5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAC447A1721A25F00B32DD5 /* QuartzCore.framework */; };
+		9AAC447D1721A28000B32DD5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAC447C1721A28000B32DD5 /* libz.dylib */; };
+		9AAC44841721A47B00B32DD5 /* MKMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAC44831721A47B00B32DD5 /* MKMapAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49B96B771721088C00A70F74 /* SubMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMenuViewController.h; sourceTree = "<group>"; };
 		49B96B781721088C00A70F74 /* SubMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMenuViewController.m; sourceTree = "<group>"; };
 		49B96B7A172118AA00A70F74 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		49B96B7D17211B0600A70F74 /* ReachOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachOutViewController.h; sourceTree = "<group>"; };
-		49B96B7E17211B0600A70F74 /* ReachOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachOutViewController.m; sourceTree = "<group>"; };
-		49B96B82172123CA00A70F74 /* MKMapAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKMapAnnotation.h; sourceTree = "<group>"; };
-		49B96B83172123CA00A70F74 /* MKMapAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKMapAnnotation.m; sourceTree = "<group>"; };
 		49E5115217201FFA006BD981 /* Kens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E5115517201FFA006BD981 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		49E5115717201FFA006BD981 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,6 +76,15 @@
 		49E511951720ECD5006BD981 /* SubMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMenuItemCell.m; sourceTree = "<group>"; };
 		49E5119D1720F57B006BD981 /* CommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunctions.h; sourceTree = "<group>"; };
 		49E5119E1720F57B006BD981 /* CommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunctions.m; sourceTree = "<group>"; };
+		9AAC446F1721998E00B32DD5 /* ReachUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachUsViewController.h; sourceTree = "<group>"; };
+		9AAC44701721998E00B32DD5 /* ReachUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachUsViewController.m; sourceTree = "<group>"; };
+		9AAC447217219B2C00B32DD5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9AAC44761721A23200B32DD5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9AAC44781721A24500B32DD5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9AAC447A1721A25F00B32DD5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9AAC447C1721A28000B32DD5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9AAC44821721A47B00B32DD5 /* MKMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapAnnotation.h; sourceTree = "<group>"; };
+		9AAC44831721A47B00B32DD5 /* MKMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +92,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AAC447D1721A28000B32DD5 /* libz.dylib in Frameworks */,
+				9AAC447B1721A25F00B32DD5 /* QuartzCore.framework in Frameworks */,
+				9AAC44791721A24500B32DD5 /* MobileCoreServices.framework in Frameworks */,
+				9AAC44771721A23200B32DD5 /* CoreLocation.framework in Frameworks */,
+				9AAC447317219B2C00B32DD5 /* MapKit.framework in Frameworks */,
 				49E5115617201FFA006BD981 /* UIKit.framework in Frameworks */,
 				49E5115817201FFA006BD981 /* Foundation.framework in Frameworks */,
 				49E5115A17201FFA006BD981 /* CoreGraphics.framework in Frameworks */,
@@ -93,10 +109,10 @@
 		49B96B7C17211A2B00A70F74 /* ReachOut */ = {
 			isa = PBXGroup;
 			children = (
-				49B96B82172123CA00A70F74 /* MKMapAnnotation.h */,
-				49B96B83172123CA00A70F74 /* MKMapAnnotation.m */,
-				49B96B7D17211B0600A70F74 /* ReachOutViewController.h */,
-				49B96B7E17211B0600A70F74 /* ReachOutViewController.m */,
+				9AAC446F1721998E00B32DD5 /* ReachUsViewController.h */,
+				9AAC44701721998E00B32DD5 /* ReachUsViewController.m */,
+				9AAC44821721A47B00B32DD5 /* MKMapAnnotation.h */,
+				9AAC44831721A47B00B32DD5 /* MKMapAnnotation.m */,
 			);
 			name = ReachOut;
 			sourceTree = "<group>";
@@ -104,6 +120,11 @@
 		49E5114917201FFA006BD981 = {
 			isa = PBXGroup;
 			children = (
+				9AAC447C1721A28000B32DD5 /* libz.dylib */,
+				9AAC447A1721A25F00B32DD5 /* QuartzCore.framework */,
+				9AAC44781721A24500B32DD5 /* MobileCoreServices.framework */,
+				9AAC44761721A23200B32DD5 /* CoreLocation.framework */,
+				9AAC447217219B2C00B32DD5 /* MapKit.framework */,
 				49E5115B17201FFA006BD981 /* Kens */,
 				49E5115417201FFA006BD981 /* Frameworks */,
 				49E5115317201FFA006BD981 /* Products */,
@@ -298,7 +319,8 @@
 				49E511961720ECD5006BD981 /* SubMenuItemCell.m in Sources */,
 				49E5119F1720F57C006BD981 /* CommonFunctions.m in Sources */,
 				49B96B791721088C00A70F74 /* SubMenuViewController.m in Sources */,
-				49B96B7F17211B0600A70F74 /* ReachOutViewController.m in Sources */,
+				9AAC44711721998E00B32DD5 /* ReachUsViewController.m in Sources */,
+				9AAC44841721A47B00B32DD5 /* MKMapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

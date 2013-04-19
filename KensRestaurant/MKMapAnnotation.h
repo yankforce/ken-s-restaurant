@@ -1,18 +1,17 @@
 //
 //  MKMapAnnotation.h
-//  YourRestaurant
+//  Kens
 //
-//  Created by Lee Machin on 13/12/2011.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Mac Mini on 4/19/13.
+//  Copyright (c) 2013 restaurant. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
-
 @interface MKMapAnnotation : NSObject <MKAnnotation> {
-  NSString *_name;
-  NSString *_address;
-  CLLocationCoordinate2D _coordinate;
+    NSString *_name;
+    NSString *_address;
+    CLLocationCoordinate2D _coordinate;
 }
 
 @property (nonatomic, copy) NSString *name;
