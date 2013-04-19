@@ -77,7 +77,7 @@
     
     // Reload table data... after the content loads
     if(responseBody) {
-        
+    /*
         CLLocationCoordinate2D coord = {
             .latitude = [[responseBody objectForKey:@"latitude"] doubleValue],
             .longitude = [[responseBody objectForKey:@"longitude"] doubleValue]
@@ -95,7 +95,7 @@
                                        coordinate:coord];
         [[self mapView] addAnnotation:annotation];
         [[self mapView] setRegion:region animated: YES];
-         
+      */   
         
     }
 }
@@ -105,46 +105,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-#pragma mark - Map View Delegates
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-    static NSString *identifier = @"restaurantLocation";
-    
-    if ([annotation isKindOfClass:[MKMapAnnotation class]]) {
-        MKMapAnnotation *annotationLocation = (MKMapAnnotation *) annotation;
-        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [[self mapView] dequeueReusableAnnotationViewWithIdentifier:identifier];
-        
-        if (annotationView == nil) {
-            annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotationLocation reuseIdentifier:identifier];
-        } else {
-            [annotationView setAnnotation:annotationLocation];
-        }
-        
-        [annotationView setEnabled:YES];
-        [annotationView setCanShowCallout:YES];
-        [annotationView setAnimatesDrop:YES];
-        [annotationView setPinColor:MKPinAnnotationColorPurple];
-        
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fork-and-knife-white.png"]];
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        [button addTarget:self action:@selector(showMoreInfo:) forControlEvents:UIControlEventTouchUpInside];
-        
-        [annotationView setLeftCalloutAccessoryView:imageView];
-        [annotationView setRightCalloutAccessoryView:button];
-        
-        imageView = nil;
-        
-        
-        return annotationView;
-    } else {
-        return nil;
-    }
-}
-
-- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views {
-    // we want to make sure that our pin is selected automatically. If we have to have multiple pins at some point,
-    // we'll have to determine the one closest to the user's current location.
-    [mapView selectAnnotation:[[mapView annotations] objectAtIndex:0] animated:YES];
-}
-
+ 
 @end

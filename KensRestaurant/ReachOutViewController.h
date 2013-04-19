@@ -11,7 +11,7 @@
 
 #import <MapKit/MapKit.h>
 
-@interface ReachOutViewController : UIViewController<MKMapViewDelegate>{
+@interface ReachOutViewController : UIViewController {
     NSURLConnection *connection;
     NSMutableData *receivedData;
 }
