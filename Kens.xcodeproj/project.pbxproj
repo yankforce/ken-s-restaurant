@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49B96B791721088C00A70F74 /* SubMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B96B781721088C00A70F74 /* SubMenuViewController.m */; };
 		49E5115617201FFA006BD981 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E5115517201FFA006BD981 /* UIKit.framework */; };
 		49E5115817201FFA006BD981 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E5115717201FFA006BD981 /* Foundation.framework */; };
 		49E5115A17201FFA006BD981 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E5115917201FFA006BD981 /* CoreGraphics.framework */; };
@@ -29,11 +30,12 @@
 		49E5118E1720EBFA006BD981 /* small-dishes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49E5118B1720EBFA006BD981 /* small-dishes.jpg */; };
 		49E5118F1720EBFA006BD981 /* large-dishes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49E5118C1720EBFA006BD981 /* large-dishes.jpg */; };
 		49E511961720ECD5006BD981 /* SubMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E511951720ECD5006BD981 /* SubMenuItemCell.m */; };
-		49E5119C1720ED20006BD981 /* SubMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E5119B1720ED20006BD981 /* SubMenuViewController.m */; };
 		49E5119F1720F57C006BD981 /* CommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E5119E1720F57B006BD981 /* CommonFunctions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49B96B771721088C00A70F74 /* SubMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMenuViewController.h; sourceTree = "<group>"; };
+		49B96B781721088C00A70F74 /* SubMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMenuViewController.m; sourceTree = "<group>"; };
 		49E5115217201FFA006BD981 /* Kens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E5115517201FFA006BD981 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		49E5115717201FFA006BD981 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,8 +65,6 @@
 		49E5118C1720EBFA006BD981 /* large-dishes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "large-dishes.jpg"; sourceTree = "<group>"; };
 		49E511941720ECD5006BD981 /* SubMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMenuItemCell.h; sourceTree = "<group>"; };
 		49E511951720ECD5006BD981 /* SubMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMenuItemCell.m; sourceTree = "<group>"; };
-		49E5119A1720ED20006BD981 /* SubMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMenuViewController.h; sourceTree = "<group>"; };
-		49E5119B1720ED20006BD981 /* SubMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMenuViewController.m; sourceTree = "<group>"; };
 		49E5119D1720F57B006BD981 /* CommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunctions.h; sourceTree = "<group>"; };
 		49E5119E1720F57B006BD981 /* CommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunctions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,8 +146,8 @@
 				49E511901720EC8B006BD981 /* Cell */,
 				49E51174172021B6006BD981 /* MenuViewController.h */,
 				49E51175172021B6006BD981 /* MenuViewController.m */,
-				49E5119A1720ED20006BD981 /* SubMenuViewController.h */,
-				49E5119B1720ED20006BD981 /* SubMenuViewController.m */,
+				49B96B771721088C00A70F74 /* SubMenuViewController.h */,
+				49B96B781721088C00A70F74 /* SubMenuViewController.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -275,8 +275,8 @@
 				49E51176172021B6006BD981 /* MenuViewController.m in Sources */,
 				49E5118817209C59006BD981 /* MenuItemCell.m in Sources */,
 				49E511961720ECD5006BD981 /* SubMenuItemCell.m in Sources */,
-				49E5119C1720ED20006BD981 /* SubMenuViewController.m in Sources */,
 				49E5119F1720F57C006BD981 /* CommonFunctions.m in Sources */,
+				49B96B791721088C00A70F74 /* SubMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +395,7 @@
 				49E5117117201FFA006BD981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

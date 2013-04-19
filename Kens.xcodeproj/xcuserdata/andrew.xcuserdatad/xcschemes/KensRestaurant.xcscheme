@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "49E5115117201FFA006BD981"
-               BuildableName = "KensRestaurant.app"
+               BuildableName = "Kens.app"
                BlueprintName = "Kens"
                ReferencedContainer = "container:Kens.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "49E5115117201FFA006BD981"
-            BuildableName = "KensRestaurant.app"
+            BuildableName = "Kens.app"
             BlueprintName = "Kens"
             ReferencedContainer = "container:Kens.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "49E5115117201FFA006BD981"
-            BuildableName = "KensRestaurant.app"
+            BuildableName = "Kens.app"
             BlueprintName = "Kens"
             ReferencedContainer = "container:Kens.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "49E5115117201FFA006BD981"
-            BuildableName = "KensRestaurant.app"
+            BuildableName = "Kens.app"
             BlueprintName = "Kens"
             ReferencedContainer = "container:Kens.xcodeproj">
          </BuildableReference>
