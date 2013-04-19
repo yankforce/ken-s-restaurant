@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MenuViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface MenuViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
+    NSURLConnection *connection;
+    NSMutableData *receivedData;
+}
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @end

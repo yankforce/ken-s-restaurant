@@ -108,15 +108,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="70" id="QcE-G5-pFn">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuItem" rowHeight="70" id="QcE-G5-pFn" customClass="MenuItemCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Menu Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byW-Y3-OuZ">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="LWo-6S-kvj"/>
+                                                <constraint firstAttribute="width" constant="254" id="wdW-nG-4sl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Menu description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vi3-TA-f2f">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="krF-tW-jqI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="byW-Y3-OuZ" firstAttribute="leading" secondItem="QcE-G5-pFn" secondAttribute="leading" constant="26" id="gq8-gL-vQm"/>
+                                    <constraint firstItem="Vi3-TA-f2f" firstAttribute="leading" secondItem="byW-Y3-OuZ" secondAttribute="leading" type="default" id="hMD-4M-Yie"/>
+                                    <constraint firstItem="byW-Y3-OuZ" firstAttribute="top" secondItem="QcE-G5-pFn" secondAttribute="top" constant="13" id="j2e-rI-Iuk"/>
+                                    <constraint firstItem="Vi3-TA-f2f" firstAttribute="trailing" secondItem="byW-Y3-OuZ" secondAttribute="trailing" type="default" id="jVE-bx-nGX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vi3-TA-f2f" secondAttribute="bottom" constant="9" id="wzL-87-bJr"/>
+                                </constraints>
                                 <connections>
+                                    <outlet property="menuDescription" destination="Vi3-TA-f2f" id="8zA-If-bSS"/>
+                                    <outlet property="menuTitle" destination="byW-Y3-OuZ" id="S0f-wh-IcV"/>
                                     <segue destination="Y9A-hz-U0o" kind="push" identifier="subMenu" id="raQ-td-rQb"/>
                                 </connections>
                             </tableViewCell>
@@ -250,11 +278,21 @@
         <image name="tags.png" width="24" height="25"/>
     </resources>
     <classes>
+        <class className="MenuItemCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuItemCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="menuDescription" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="menuTitle" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="MenuViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
