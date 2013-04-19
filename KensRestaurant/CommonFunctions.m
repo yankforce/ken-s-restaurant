@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 restaurant. All rights reserved.
 //
 
-#import "CommonFunctions.h"
-
+#import "CommonFunctions.h" 
 @implementation CommonFunctions
 
 + (NSURL*)urlFor: (NSString*)urlString
@@ -24,5 +23,11 @@
                           cancelButtonTitle:@"OK"
                           otherButtonTitles:nil];
     [alert show];
+}
+
++ (void) setNavTitle: (UIViewController*) view
+{
+    UIImageView *logo = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
+    view.navigationItem.titleView = logo;
 }
 @end

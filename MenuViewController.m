@@ -30,8 +30,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    
+
+    [CommonFunctions setNavTitle:self];
     // Making API Call
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[CommonFunctions urlFor:@"menu"]];
     
@@ -68,16 +68,14 @@
 // Connection Recieved..
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     receivedData = [[NSMutableData alloc]init];
-    [receivedData appendData:data];
-    NSLog(@"In COnnection recieved...");
+    [receivedData appendData:data]; 
     
     
 }
 
 // Connection failed
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    //Oops! handle failure here
-    NSLog(@"In COnnection failed...%@", [error localizedDescription]);
+    //Oops! handle failure here 
     [CommonFunctions showError:@"Connection Failed" message:@"Failed to connect to server. Please try again."];
 }
 
@@ -91,9 +89,7 @@
 
     // Reload table data... after the content loads
     if(responseBody)
-        [self.tableView reloadData];
-    
-    NSLog(@"In Connection loaded...");
+        [self.tableView reloadData]; 
 }
 
                                                     /* API CALL - Connection Related Functions.. [ENDS] */
@@ -109,8 +105,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    NSLog(@"responsecount %d", [responseBody count]);
+{ 
     return [responseBody count];
 }
 

@@ -11,4 +11,5 @@
 @interface CommonFunctions : NSObject
 + (NSURL*)urlFor: (NSString*)urlString;
 + (void) showError:(NSString*) title message:(NSString*) message;
++ (void) setNavTitle: (UIViewController*) view;
 @end
