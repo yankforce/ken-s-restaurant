@@ -11,5 +11,5 @@
 @interface MenuItemCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *menuTitle;
 @property (weak, nonatomic) IBOutlet UILabel *menuDescription;
-@property (weak, nonatomic) NSString *menuIdentifier;
+@property (nonatomic, copy) NSString *menuIdentifier;
 @end

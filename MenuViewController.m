@@ -7,7 +7,6 @@
 //
 
 #import "MenuViewController.h"
-#import "MenuItemCell.h"
 
 @interface MenuViewController ()
 
@@ -34,8 +33,7 @@
     
     
     // Making API Call
-    NSMutableURLRequest *request = nil;
-    request = [NSMutableURLRequest requestWithURL:[MenuViewController urlFor:@"menu"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[CommonFunctions urlFor:@"menu"]];
     
     NSString *get = @""; // get string, if any.. mostly used for post
     NSData *getData = [get dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
@@ -56,6 +54,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Segue based call
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+     
+    SubMenuViewController *subMenuViewController = [segue destinationViewController];
+    [subMenuViewController setIdentifier: [sender menuIdentifier]];
+}
+
+#pragma mark - API CALL - Connection Related Functions
 
                                                     /* API CALL - Connection Related Functions.. [STARTS]*/
 // Connection Recieved..
@@ -71,7 +78,7 @@
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     //Oops! handle failure here
     NSLog(@"In COnnection failed...%@", [error localizedDescription]);
-    [MenuViewController showError:@"Connection Failed" message:@"Failed to connect to server. Please try again."];
+    [CommonFunctions showError:@"Connection Failed" message:@"Failed to connect to server. Please try again."];
 }
 
 
@@ -86,11 +93,13 @@
     if(responseBody)
         [self.tableView reloadData];
     
-    NSLog(@"In Connection loading...");
+    NSLog(@"In Connection loaded...");
 }
 
                                                     /* API CALL - Connection Related Functions.. [ENDS] */
 
+
+#pragma mark - TABLE VIEW - Render(UITableViewDelegate) Related Functions
 
                                                     /* TABLE VIEW - Render(UITableViewDelegate) Related Functions.. [STARTS] */
 
@@ -123,24 +132,5 @@
 }
 
                                             /* TABLE VIEW - Render(UITableViewDelegate) Related Functions.. [ENDS] */
-
-
-
-+ (NSURL*)urlFor: (NSString*)urlString
-{
-    return [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"ApplicationApiRootUrl"], urlString]];
-}
-
-+ (void) showError:(NSString*) title message:(NSString*) message
-{
-    UIAlertView *alert = [[UIAlertView alloc]
-                          initWithTitle: title
-                          message: message
-                          delegate: nil
-                          cancelButtonTitle:@"OK"
-                          otherButtonTitles:nil];
-    [alert show];
-}
-
 
 @end

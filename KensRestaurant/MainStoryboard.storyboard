@@ -117,8 +117,8 @@
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Menu Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byW-Y3-OuZ">
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="213" id="96p-H9-Z5F"/>
                                                 <constraint firstAttribute="height" constant="21" id="LWo-6S-kvj"/>
-                                                <constraint firstAttribute="width" constant="254" id="wdW-nG-4sl"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -126,6 +126,7 @@
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Menu description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vi3-TA-f2f">
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="254" id="E2S-SF-fc1"/>
                                                 <constraint firstAttribute="height" constant="21" id="krF-tW-jqI"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
@@ -138,9 +139,8 @@
                                 <constraints>
                                     <constraint firstItem="byW-Y3-OuZ" firstAttribute="leading" secondItem="QcE-G5-pFn" secondAttribute="leading" constant="26" id="gq8-gL-vQm"/>
                                     <constraint firstItem="Vi3-TA-f2f" firstAttribute="leading" secondItem="byW-Y3-OuZ" secondAttribute="leading" type="default" id="hMD-4M-Yie"/>
-                                    <constraint firstItem="byW-Y3-OuZ" firstAttribute="top" secondItem="QcE-G5-pFn" secondAttribute="top" constant="13" id="j2e-rI-Iuk"/>
-                                    <constraint firstItem="Vi3-TA-f2f" firstAttribute="trailing" secondItem="byW-Y3-OuZ" secondAttribute="trailing" type="default" id="jVE-bx-nGX"/>
-                                    <constraint firstAttribute="bottom" secondItem="Vi3-TA-f2f" secondAttribute="bottom" constant="9" id="wzL-87-bJr"/>
+                                    <constraint firstItem="byW-Y3-OuZ" firstAttribute="top" secondItem="QcE-G5-pFn" secondAttribute="top" constant="11" id="jaw-7g-nw5"/>
+                                    <constraint firstItem="Vi3-TA-f2f" firstAttribute="top" secondItem="byW-Y3-OuZ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kOk-ao-XYq"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="menuDescription" destination="Vi3-TA-f2f" id="8zA-If-bSS"/>
@@ -149,6 +149,10 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qDf-ZW-6Uq" id="jiz-60-DMJ"/>
+                            <outlet property="delegate" destination="qDf-ZW-6Uq" id="2ge-jJ-b18"/>
+                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="q0l-aF-VDG"/>
                     <connections>
@@ -159,35 +163,73 @@
             </objects>
             <point key="canvasLocation" x="519" y="-1186"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Sub Menu View Controller-->
         <scene sceneID="x2e-Y2-qiz">
             <objects>
-                <tableViewController id="Y9A-hz-U0o" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jMZ-Tm-07y">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfx-gv-zya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="Y9A-hz-U0o" customClass="SubMenuViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="52" sectionHeaderHeight="22" sectionFooterHeight="22" id="jMZ-Tm-07y">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" image="large-dishes.jpg" id="XqI-2R-qw4">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7WR-GO-E7Q">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="subMenuItem" rowHeight="52" id="7WR-GO-E7Q" customClass="SubMenuItemCell">
+                                <rect key="frame" x="0.0" y="108" width="320" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgs-MK-KM5">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="R83-kq-UE0"/>
+                                                <constraint firstAttribute="width" constant="201" id="mSM-vQ-HEc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdT-MZ-rsf">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="55" id="Rfh-3I-xIw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vdT-MZ-rsf" secondAttribute="trailing" constant="20" type="default" id="3jV-8s-2Z6"/>
+                                    <constraint firstItem="hgs-MK-KM5" firstAttribute="top" secondItem="7WR-GO-E7Q" secondAttribute="top" constant="15" id="ClY-xn-6y5"/>
+                                    <constraint firstItem="vdT-MZ-rsf" firstAttribute="bottom" secondItem="hgs-MK-KM5" secondAttribute="bottom" type="default" id="GOH-S3-Hcx"/>
+                                    <constraint firstItem="hgs-MK-KM5" firstAttribute="leading" secondItem="7WR-GO-E7Q" secondAttribute="leading" constant="20" type="default" id="LWl-DA-Gqj"/>
+                                    <constraint firstItem="vdT-MZ-rsf" firstAttribute="top" secondItem="hgs-MK-KM5" secondAttribute="top" type="default" id="yHX-7b-1ni"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="itemName" destination="hgs-MK-KM5" id="6Kv-qB-M5S"/>
+                                    <outlet property="itemPrice" destination="vdT-MZ-rsf" id="WYI-d0-gkE"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Y9A-hz-U0o" id="6fC-dp-T6v"/>
-                            <outlet property="delegate" destination="Y9A-hz-U0o" id="iWc-WX-oDv"/>
+                            <outlet property="dataSource" destination="Y9A-hz-U0o" id="62z-9S-sCI"/>
+                            <outlet property="delegate" destination="Y9A-hz-U0o" id="7ru-S9-8kc"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="0aF-nD-mfv"/>
+                    <connections>
+                        <outlet property="tableView" destination="jMZ-Tm-07y" id="TvF-7a-iUG"/>
+                        <outlet property="titleImage" destination="XqI-2R-qw4" id="LuO-dX-gsb"/>
+                    </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfx-gv-zya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909" y="-1186"/>
+            <point key="canvasLocation" x="973" y="-1186"/>
         </scene>
         <!--Navigation Controller - Ken's Restaurant-->
         <scene sceneID="D1x-PE-OPj">
@@ -274,6 +316,7 @@
     <resources>
         <image name="calendar.png" width="23" height="25"/>
         <image name="fork-and-knife.png" width="18" height="26"/>
+        <image name="large-dishes.jpg" width="570" height="238"/>
         <image name="location-arrow.png" width="24" height="24"/>
         <image name="tags.png" width="24" height="25"/>
     </resources>
@@ -293,6 +336,20 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SubMenuItemCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SubMenuItemCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="itemName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="itemPrice" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SubMenuViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SubMenuViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="titleImage" candidateClass="UIImageView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

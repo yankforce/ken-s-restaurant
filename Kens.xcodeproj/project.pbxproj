@@ -25,6 +25,12 @@
 		49E511821720347A006BD981 /* tags.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E511811720347A006BD981 /* tags.png */; };
 		49E51184172034C6006BD981 /* location-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E51183172034C6006BD981 /* location-arrow.png */; };
 		49E5118817209C59006BD981 /* MenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E5118717209C59006BD981 /* MenuItemCell.m */; };
+		49E5118D1720EBFA006BD981 /* pasta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49E5118A1720EBFA006BD981 /* pasta.jpg */; };
+		49E5118E1720EBFA006BD981 /* small-dishes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49E5118B1720EBFA006BD981 /* small-dishes.jpg */; };
+		49E5118F1720EBFA006BD981 /* large-dishes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49E5118C1720EBFA006BD981 /* large-dishes.jpg */; };
+		49E511961720ECD5006BD981 /* SubMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E511951720ECD5006BD981 /* SubMenuItemCell.m */; };
+		49E5119C1720ED20006BD981 /* SubMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E5119B1720ED20006BD981 /* SubMenuViewController.m */; };
+		49E5119F1720F57C006BD981 /* CommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E5119E1720F57B006BD981 /* CommonFunctions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,15 @@
 		49E51183172034C6006BD981 /* location-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location-arrow.png"; sourceTree = "<group>"; };
 		49E5118617209C59006BD981 /* MenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemCell.h; sourceTree = "<group>"; };
 		49E5118717209C59006BD981 /* MenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemCell.m; sourceTree = "<group>"; };
+		49E5118A1720EBFA006BD981 /* pasta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pasta.jpg; sourceTree = "<group>"; };
+		49E5118B1720EBFA006BD981 /* small-dishes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "small-dishes.jpg"; sourceTree = "<group>"; };
+		49E5118C1720EBFA006BD981 /* large-dishes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "large-dishes.jpg"; sourceTree = "<group>"; };
+		49E511941720ECD5006BD981 /* SubMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMenuItemCell.h; sourceTree = "<group>"; };
+		49E511951720ECD5006BD981 /* SubMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMenuItemCell.m; sourceTree = "<group>"; };
+		49E5119A1720ED20006BD981 /* SubMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMenuViewController.h; sourceTree = "<group>"; };
+		49E5119B1720ED20006BD981 /* SubMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubMenuViewController.m; sourceTree = "<group>"; };
+		49E5119D1720F57B006BD981 /* CommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunctions.h; sourceTree = "<group>"; };
+		49E5119E1720F57B006BD981 /* CommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunctions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +119,8 @@
 				49E5116517201FFA006BD981 /* AppDelegate.m */,
 				49E511721720200C006BD981 /* MainStoryboard.storyboard */,
 				49E5115C17201FFA006BD981 /* Supporting Files */,
+				49E5119D1720F57B006BD981 /* CommonFunctions.h */,
+				49E5119E1720F57B006BD981 /* CommonFunctions.m */,
 			);
 			name = Kens;
 			path = KensRestaurant;
@@ -126,10 +143,11 @@
 		49E51177172021D0006BD981 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				49E511901720EC8B006BD981 /* Cell */,
 				49E51174172021B6006BD981 /* MenuViewController.h */,
 				49E51175172021B6006BD981 /* MenuViewController.m */,
-				49E5118617209C59006BD981 /* MenuItemCell.h */,
-				49E5118717209C59006BD981 /* MenuItemCell.m */,
+				49E5119A1720ED20006BD981 /* SubMenuViewController.h */,
+				49E5119B1720ED20006BD981 /* SubMenuViewController.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -137,6 +155,7 @@
 		49E5117C172033EF006BD981 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				49E511891720EBEC006BD981 /* dishes */,
 				49E5118517203656006BD981 /* icons */,
 			);
 			name = images;
@@ -153,6 +172,27 @@
 				49E5117D17203451006BD981 /* calendar.png */,
 			);
 			name = icons;
+			sourceTree = "<group>";
+		};
+		49E511891720EBEC006BD981 /* dishes */ = {
+			isa = PBXGroup;
+			children = (
+				49E5118A1720EBFA006BD981 /* pasta.jpg */,
+				49E5118B1720EBFA006BD981 /* small-dishes.jpg */,
+				49E5118C1720EBFA006BD981 /* large-dishes.jpg */,
+			);
+			name = dishes;
+			sourceTree = "<group>";
+		};
+		49E511901720EC8B006BD981 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				49E5118617209C59006BD981 /* MenuItemCell.h */,
+				49E5118717209C59006BD981 /* MenuItemCell.m */,
+				49E511941720ECD5006BD981 /* SubMenuItemCell.h */,
+				49E511951720ECD5006BD981 /* SubMenuItemCell.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +257,9 @@
 				49E5118017203461006BD981 /* fork-and-knife.png in Resources */,
 				49E511821720347A006BD981 /* tags.png in Resources */,
 				49E51184172034C6006BD981 /* location-arrow.png in Resources */,
+				49E5118D1720EBFA006BD981 /* pasta.jpg in Resources */,
+				49E5118E1720EBFA006BD981 /* small-dishes.jpg in Resources */,
+				49E5118F1720EBFA006BD981 /* large-dishes.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +274,9 @@
 				49E5116617201FFA006BD981 /* AppDelegate.m in Sources */,
 				49E51176172021B6006BD981 /* MenuViewController.m in Sources */,
 				49E5118817209C59006BD981 /* MenuItemCell.m in Sources */,
+				49E511961720ECD5006BD981 /* SubMenuItemCell.m in Sources */,
+				49E5119C1720ED20006BD981 /* SubMenuViewController.m in Sources */,
+				49E5119F1720F57C006BD981 /* CommonFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
